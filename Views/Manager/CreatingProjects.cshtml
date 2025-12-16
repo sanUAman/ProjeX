@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
 <header>
-    <a class="logo" asp-controller="Participant" asp-action="MainPage">ProjeX</a>
+    <a class="logo" asp-controller="MainPage" asp-action="MainPage">ProjeX</a>
 </header>
 
 <div class="header-with-line">
@@ -23,7 +23,7 @@
 
     <div class="container">
         <div class="project-container">
-            <form method="post" asp-controller="Participant" asp-action="Create">
+            <form method="post" asp-controller="Manager" asp-action="Create">
 
                 <input type="hidden" name="nickname" value="@ViewBag.nickname" />
                 <input type="hidden" name="password" value="@ViewBag.password" />
@@ -34,7 +34,7 @@
 
                 <div class="button-container">
                     <button type="submit" class="create-button">Create</button>
-                    <a class="back-button" asp-controller="Participant" asp-action="MainPage">Back</a>
+                    <a class="back-button" asp-controller="MainPage" asp-action="MainPage">Back</a>
                 </div>
             </form>
         </div>

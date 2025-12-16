@@ -55,6 +55,7 @@ namespace ProjectManage.Controllers
             _context.SaveChanges();
 
             HttpContext.Session.SetInt32("participantId", participant.Id);
+            HttpContext.Session.SetString("nickname", participant.nickname);
 
             return RedirectToAction("MainPage");
         }

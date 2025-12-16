@@ -11,6 +11,7 @@
         padding: 20px;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         border: 1px solid #5b442e;
         border-radius: 5px;
         transition: transform 0.3s ease-in-out;
@@ -43,7 +44,7 @@
         }
     
     .name-of-container {
-        font-size: 13px;
+        font-size: 20px;
     }
     
     .messages {
@@ -66,7 +67,7 @@
         }
 
     .name-of-container {
-        font-size: 13px;
+        font-size: 20px;
     }
 
     .messages {
